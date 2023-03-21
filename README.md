@@ -33,7 +33,6 @@ The main features of LPC2148 include the following.
  ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
  2. click on FILE, click on new stm 32 project 
  ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
-![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
 3. select the target to be programmed  as shown below and click on next 
 ![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
 4.select the program name 
@@ -42,10 +41,8 @@ The main features of LPC2148 include the following.
 ![image](https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png)
 6.select the appropriate pins as gipo, in or out, USART or required options and configure 
 ![image](https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png)
-![image](https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png)
 7.click on cntrl+S , automaticall C program will be generated 
 ![image](https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png)
-![image](https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png)
 8. edit the program and as per required 
 ![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
 9. use project and build all 
@@ -63,19 +60,15 @@ The main features of LPC2148 include the following.
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 void led();
-
   */
 int main(void)
 {
   HAL_Init();
   SystemClock_Config();
-
   MX_GPIO_Init();
-  
   while (1)
   {
 	  led();
-   
   }
 }
 void led()
@@ -137,14 +130,11 @@ void Error_Handler(void)
   while (1)
   {
   }
-  
 }
-
 #ifdef  USE_FULL_ASSERT
 
 void assert_failed(uint8_t *file, uint32_t line)
-{
-  
+{ 
 }
 #endif
 ~~~
@@ -153,7 +143,6 @@ void assert_failed(uint8_t *file, uint32_t line)
 ![p1](https://user-images.githubusercontent.com/94155183/226685889-803bf3ad-e520-4fef-8f90-0006be34e528.jpeg)
 ## LED OFF
 ![p2](https://user-images.githubusercontent.com/94155183/226685981-38003660-7d37-43a1-839f-5c6f572e6f4f.jpeg)
- 
 ## Result :
 Interfacing a digital output with ARM microcontroller is executed and the results are verified.
 
