@@ -149,9 +149,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif
 ~~~
 ## Output  :
-##LED ON:
+## LED ON
 ![p1](https://user-images.githubusercontent.com/94155183/226685889-803bf3ad-e520-4fef-8f90-0006be34e528.jpeg)
-##LED OFF:
+## LED OFF
 ![p2](https://user-images.githubusercontent.com/94155183/226685981-38003660-7d37-43a1-839f-5c6f572e6f4f.jpeg)
  
 ## Result :
